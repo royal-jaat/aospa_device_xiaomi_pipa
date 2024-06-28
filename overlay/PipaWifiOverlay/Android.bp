@@ -3,6 +3,5 @@
 
 runtime_resource_overlay {
     name: "PipaWifiOverlay",
-    sdk_version: "current",
     product_specific: true,
 }
