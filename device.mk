@@ -223,6 +223,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.lmk.force_inkernel_lmk=true
 
+# Media
+TARGET_SUPPORTS_OMX_SERVICE := false
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.media.omx=0
+
 # Multi-Gen LRU
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
