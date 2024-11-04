@@ -39,8 +39,6 @@ function lib_to_package_fixup_vendor_variants() {
     fi
 
     case "$1" in
-        libOpenCL | libC2D2)
-            ;;
         libOmxCore | \
             libgrallocutils | \
             libwfdaac_vendor)
