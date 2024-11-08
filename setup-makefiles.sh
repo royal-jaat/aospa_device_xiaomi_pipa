@@ -30,6 +30,9 @@ function vendor_imports() {
     cat <<EOF >>"$1"
 		"device/xiaomi/pipa",
 		"hardware/xiaomi",
+		"vendor/qcom/common/vendor/adreno-r",
+		"vendor/qcom/common/vendor/display",
+		"vendor/qcom/common/vendor/display/4.19",
 EOF
 }
 
@@ -42,6 +45,18 @@ function lib_to_package_fixup_vendor_variants() {
         libOmxCore | \
             libgrallocutils | \
             libwfdaac_vendor)
+            ;;
+        libmmosal | \
+            vendor.display.color@1.0 | \
+            vendor.display.color@1.1 | \
+            vendor.display.color@1.2 | \
+            vendor.display.color@1.3 | \
+            vendor.display.color@1.4 | \
+            vendor.display.color@1.5 | \
+            vendor.display.postproc@1.0 | \
+            vendor.qti.hardware.limits@1.0 | \
+            vendor.qti.hardware.wifidisplaysession@1.0)
+            echo "$1_vendor"
             ;;
         *)
             return 1

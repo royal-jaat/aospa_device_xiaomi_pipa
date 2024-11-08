@@ -269,7 +269,7 @@ vendor/lib64/libchilog.so|f7f8f395d826f66c5b04f2c25981f0d96ae38ac9
 vendor/lib64/libcom.qti.chinodeutils.so|6db86a66395910a29adbb2fe714e4a9b9410c75b
 vendor/lib64/libdualcam_optical_zoom_control.so|87a0507f8115488666a2a65a6237e80086854d7c
 vendor/lib64/libipebpsstriping.so|0894e54002e18443481f0b90e87c32fcc8783c38
-vendor/lib64/libmiai_portraitsupernight.so|2f3055e4d22aa7e53c7ad8120d658fa27582dc37
+vendor/lib64/libmiai_portraitsupernight.so;DISABLE_CHECKELF|2f3055e4d22aa7e53c7ad8120d658fa27582dc37
 vendor/lib64/libmialgo_ie_capture.so|11b844803a2e53221be72bbdd3c2b4722e7ffc42
 vendor/lib64/libmialgo_rfs.so|d27e391187673c06b4931ccf2658ca05dfa6ea44
 vendor/lib64/libmialgo_sd.so|9b75397cb18c8cc52e114d70f0cb1cdee2d8df11
@@ -407,7 +407,7 @@ vendor/lib64/libmulticam_optical_zoom_control.so|e72adf2073f1c87c5854e49ddf5d1d6
 
 # Charger - MIUI
 vendor/bin/batterysecret|601126ca842ce35b2922e0b19bccfdf9f99ece15
-vendor/bin/hvdcp_opti|d3dae2d3c64df366b82d11deb100af4d8813131f
+vendor/bin/hvdcp_opti;MODULE_SUFFIX=_pipa;OVERRIDES=hvdcp_opti|d3dae2d3c64df366b82d11deb100af4d8813131f
 vendor/etc/init/init.batterysecret.rc|9abbe6fd82a0bd5b4499bfe141a5645e76e57606
 
 # Config Store
@@ -449,25 +449,8 @@ vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libdpps.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display (Configs) - MIUI
 vendor/etc/default.lm|ccf299a48b5637d96c1033d56b5094d8dd7767dd
@@ -546,8 +529,8 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
 # MM OSAL
-vendor/lib/libmmosal.so
-vendor/lib64/libmmosal.so
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # NPU
 vendor/bin/npu_launcher
@@ -606,7 +589,6 @@ vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
@@ -618,7 +600,6 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
-vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
 # QTEE
@@ -793,7 +774,7 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
 vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
-vendor/lib64/vendor.qti.hardware.limits@1.0.so
+vendor/lib64/vendor.qti.hardware.limits@1.0.so;MODULE_SUFFIX=_vendor
 
 # Thermal - MIUI
 vendor/bin/mi_thermald|f3238f0f493b7a1ed7fda7d5f506f6d2f6ae4e65
@@ -907,5 +888,5 @@ vendor/lib/libwfduibcsinkinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
