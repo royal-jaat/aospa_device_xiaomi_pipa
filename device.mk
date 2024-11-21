@@ -143,6 +143,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 TARGET_USE_AIDL_QTI_MEMTRACK := true
 
 PRODUCT_VENDOR_PROPERTIES += \
+    debug.graphics.game_default_frame_rate.disabled=1 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1
 
