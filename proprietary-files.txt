@@ -782,9 +782,6 @@ vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc|3def34d082c4b
 vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so|8e40044769aa39df0cd515042ead98373eafdffe
 vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so|9af649faa7b430330290273a9883fdae309addc7
 
-# UBWC
-vendor/lib/libstreamparser.so
-
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
