@@ -223,28 +223,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.lmk.force_inkernel_lmk=true
 
-# Media
-MSM_VIDC_TARGET_LIST := kona
-
-include hardware/qcom/media/conf_files/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
-
-PRODUCT_COPY_FILES += \
-    device/qcom/common/vendor/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
-
-PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw \
-    libc2dcolorconvert \
-    init.qti.media.sh
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
-    media.stagefright.thumbnail.prefer_hw_codecs=true \
-    ro.media.recorder-max-base-layer-fps=60
-
 # Multi-Gen LRU
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
@@ -295,6 +273,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     charging \
     display \
     init \
+    media \
     overlay \
     perf \
     usb \
