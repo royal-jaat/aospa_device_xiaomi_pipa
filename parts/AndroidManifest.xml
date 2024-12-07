@@ -103,6 +103,5 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/rotate_summary" />
         </activity>
-
     </application>
 </manifest>

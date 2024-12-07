@@ -50,8 +50,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.audio.monitorRotation=true \
     ro.config.vc_call_vol_steps=11 \
     ro.hardware.audio.primary=pipa \
-    ro.vendor.audio.dolby.dax.support=true \
-    ro.vendor.audio.dolby.surround.enable=true \
     ro.vendor.audio.enhance.support=false \
     ro.vendor.audio.gain.support=true \
     ro.vendor.audio.karaok.support=true \
@@ -64,8 +62,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.us.type=mius \
     ro.vendor.audio.zoom.support=true \
     ro.vendor.audio.zoom.type=1 \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.spkcal.copy.inhal=true \
     vendor.audio.usb.disable.sidetone=true
 
@@ -82,9 +78,6 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
-
-PRODUCT_PACKAGES += \
-    XiaomiDolby
 
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
@@ -251,10 +244,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
     ro.media.recorder-max-base-layer-fps=60
-
-# Media (Dolby)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
 
 # Multi-Gen LRU
 PRODUCT_SYSTEM_EXT_PROPERTIES += \

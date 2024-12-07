@@ -66,10 +66,6 @@ function blob_fixup() {
             sed -i "s|/vendor/lib/liba2dpoffload\.so|liba2dpoffload_pipa\.so\x00\x00\x00\x00\x00\x00\x00|g" "${2}"
             sed -i "s|/vendor/lib/libssrec\.so|libssrec_pipa\.so\x00\x00\x00\x00\x00\x00\x00|g" "${2}"
             ;;
-        vendor/lib/libstagefright_soft_ac4dec.so|vendor/lib/libstagefright_soft_ddpdec.so|vendor/lib64/libdlbdsservice.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
-            ;;
         vendor/lib64/mediadrm/libwvdrmengine.so|vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
