@@ -131,6 +131,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
 
+PRODUCT_PACKAGES += \
+    Aperture
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,org.lineageos.aperture \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.aperture
+
 # Charging
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.pps.disallowed=1 \
@@ -263,6 +270,7 @@ PRODUCT_PACKAGES += \
     AOSPAPipaSystemUI \
     FrameworksRes23043RP34C \
     FrameworksResTarget \
+    PipaAperture \
     PipaFrameworks \
     PipaSettings \
     PipaSettingsProvider \

@@ -16,6 +16,7 @@ LOCAL_OVERRIDES_PACKAGES := \
    Contacts \
    Dialer \
    Drive \
+   GoogleCameraGo \
    GoogleContacts \
    GoogleDialer \
    Maps \
