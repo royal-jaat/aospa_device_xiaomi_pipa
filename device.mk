@@ -271,6 +271,7 @@ PRODUCT_PACKAGES += \
     FrameworksRes23043RP34C \
     FrameworksResTarget \
     PipaAperture \
+    PipaFlipFlap \
     PipaFrameworks \
     PipaSettings \
     PipaSettingsProvider \
@@ -358,6 +359,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
 PRODUCT_PACKAGES += \
+    FlipFlap \
     RemovePackages
 
 PRODUCT_PRODUCT_PROPERTIES += \
