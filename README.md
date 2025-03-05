@@ -30,3 +30,4 @@ Display | IPS LCD, 144Hz, HDR10, Dolby Vision, 550 nits
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
+# aospa_device_xiaomi_pipa
