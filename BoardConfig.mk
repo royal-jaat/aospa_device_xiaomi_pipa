@@ -160,3 +160,5 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SEPolicy
 -include device/xiaomi/pipa/sepolicy/pipa-sepolicy.mk
+
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
