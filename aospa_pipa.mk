@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/pipa/device.mk)
 # Inherit from the AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
+# Sign build
+-include vendor/lineage-priv/keys/keys.mk
+
 PRODUCT_NAME := aospa_pipa
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := pipa
